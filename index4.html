@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: rgb(94, 189, 0);
+            border: dotted 4px;
+            width: 200px;
+        }
+        body{
+            background-color:palegreen ;
+        }
+        label{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form>
+        <label for="Fname">Customer First Name: </label>
+        <input type="text" id="Fname">
+        <br>
+        <label for="Lname">Customer Last Name: </label>
+        <input type="text" id="Lname">
+        <br>
+        <label for="address">Address: </label>
+        <input type="text" id="address">
+        <br>
+        <label for="city">City: </label>
+        <input type="text" id="city">
+        <br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" maxlength="12">
+        <br>
+        <label for="bday">Birth date: </label>
+        <input type="date" id="bday" name="birthdate" min="1950-01-01" max="2023-07-13">
+        <br>
+        <label for="status">Status in Canada: </label>
+        <input list="list" id="status" name="list">
+        <datalist id="list">
+            <option value="Student">Student</option>
+            <option value="Worker">Worker</option>
+            <option value="PR">PR</option>
+        </datalist>
+        <br>
+        <br>
+        <label>Gender: </label>
+            <br>
+            <label for="gender1">Female </label>
+            <input type="checkbox" id="gender1">
+            <br>
+            <label for="gender2">Male </label>
+            <input type="checkbox" id="gender2">
+            <br>
+            <label for="gender3">Other </label>
+            <input type="checkbox" id="gender3">
+            <br>
+        <br>
+        <label>Skills: </label>
+            <br>
+            <label for="skill1">Swimming </label>
+            <input type="radio" id="skill1" name="rskill" value="rskill1">
+            <br>
+            <label for="skill2">Running </label>
+            <input type="radio" id="skill2" name="rskill" value="rskill2">
+            <br>
+            <label for="skill3">Jumping </label>
+            <input type="radio" id="skill3" name="rskill" value="rskill3">
+            <br>
+        <img src="C:\Users\Admin\Documents\WebDevelopment\WebDevelopment\danny.jpg" alt="Danny DeVito image" height="500px">
+        <br>
+        <label for="resume">Upload Resume: </label>
+        <input type="file" id="resume" name="resume1">
+        <br>
+        <label>Ratings</label>
+            <br>
+            <label for="ratings1">1</label>
+            <input type="radio" id="ratings1" name="rbutton" value="rbutton1">
+            
+            <label for="ratings2">2</label>
+            <input type="radio" id="ratings2" name="rbutton" value="rbutton2">
+            
+            <label for="ratings3">3</label>
+            <input type="radio" id="ratings3" name="rbutton" value="rbutton3">
+            
+            <label for="ratings4">4</label>
+            <input type="radio" id="ratings4" name="rbutton" value="rbutton4">
+            
+            <label for="ratings5">5</label>
+            <input type="radio" id="ratings5" name="rbutton" value="rbutton5">
+            <br>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
