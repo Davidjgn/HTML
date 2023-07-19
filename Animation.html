@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animation</title>
+
+    <style>
+        /*@keyframes animation1{
+            from{background-color: red;}
+            to{background-color: blue;}
+            }
+        .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        animation-name: animation1;
+        animation-duration: 2s;
+        }*/
+        @keyframes animation2{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        .rotate{
+            height: 80px;
+            width: 80px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 50%;
+            animation-name: animation2;
+            animation: animation2 2s linear infinite;
+        }
+        .ball{
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        @keyframes rotate2{
+            0%{
+                transform: rotate(0deg);
+                border-left: 20px solid black;
+            }
+            50%{
+                border-left: 2px solid black;
+            }
+            100%{
+                transform: rotate(360deg);
+                border-left: 20px solid black;
+            }
+        }
+        .rotate2{
+            height: 80px;
+            width: 80px;
+            margin: 20px auto;
+            border-radius: 50%;
+            animation-name: rotate2;
+            animation: rotate2 2s cubic-bezier(.80, .30, .30, .80) infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS animation</h1>
+    <!--<div class="circle"></div>-->
+    <div class="rotate">
+        <div class="ball"></div>
+    </div>
+
+    <div class="rotate2">
+        
+    </div>
+
+</body>
+</html>
